@@ -1,0 +1,9 @@
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\bin\Debug\netcoreapp3.1\NopCommerceClone.Data.deps.json
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\bin\Debug\netcoreapp3.1\NopCommerceClone.Data.dll
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\bin\Debug\netcoreapp3.1\NopCommerceClone.Data.pdb
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\obj\Debug\netcoreapp3.1\NopCommerceClone.Data.AssemblyInfoInputs.cache
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\obj\Debug\netcoreapp3.1\NopCommerceClone.Data.AssemblyInfo.cs
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\obj\Debug\netcoreapp3.1\NopCommerceClone.Data.csproj.CoreCompileInputs.cache
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\obj\Debug\netcoreapp3.1\NopCommerceClone.Data.dll
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\obj\Debug\netcoreapp3.1\NopCommerceClone.Data.pdb
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone.Data\obj\Debug\netcoreapp3.1\NopCommerceClone.Data.csprojAssemblyReference.cache
