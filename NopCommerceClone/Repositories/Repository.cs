@@ -9,11 +9,21 @@ namespace NopCommerceClone.Web.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        #region
-        protected NopCommereceCloneDbContext _context = new NopCommereceCloneDbContext();
+        
+        #region fields
+        private DbContextOptions<NopCommereceCloneDbContext> _contextOptions = new DbContextOptionsBuilder<NopCommereceCloneDbContext>()
+                                            .UseSqlServer(@"server=DESKTOP-IE13SOT;Database=nopcommerce_clone;Trusted_Connection=True;MultipleActiveResultSets=true")
+                                            .Options;
+
+        protected NopCommereceCloneDbContext _context;// = new NopCommereceCloneDbContext();
+
+
         #endregion
         #region Methods
-
+        public Repository()
+        {
+            _context = new NopCommereceCloneDbContext(_contextOptions);
+        }
 
         public void Delete(object id)
         {

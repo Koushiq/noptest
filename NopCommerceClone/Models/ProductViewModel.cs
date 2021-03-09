@@ -1,0 +1,16 @@
+﻿using NopCommerceClone.Data.EntityModel;
+using NopCommerceClone.Web.Models;
+using NopCommerceClone.Web.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace NopCommerceClone.Models
+{
+    public class ProductViewModel
+    {
+        public List<Product> Products  { get ; set; }
+        public List<Catelog> Catelogs { get; set; }
+    }
+}

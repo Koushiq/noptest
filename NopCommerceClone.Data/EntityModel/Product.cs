@@ -17,9 +17,12 @@ namespace NopCommerceClone.Data.EntityModel
         public DateTime AddedAt { get; set; }
         [Required]
         public int AdminID { get; set; }
-        public Admin Admin { get; set; }
+        public virtual Admin Admin { get; set; }
 
-        
+        [Required]
+        public int CatelogID { get; set; }
+        public virtual Catelog Catelog { get; set; }
+
 
     }
 }

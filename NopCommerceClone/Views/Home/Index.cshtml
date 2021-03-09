@@ -1,8 +1,53 @@
-﻿@{
+﻿@model NopCommerceClone.Models.ProductViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
+
+
+<script>
+    $(document).ready(function () {
+        console.log('Hello world !');
+
+        $('#myTable').DataTable();
+    });
+</script>
 
 <div class="text-center">
     <h1 class="display-4">Welcome to the NopCommerce Clone Store!</h1>
     <p>Search for your desired products</p>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>
+                    Product ID
+                </th>
+
+                <th>
+                    Product Name
+                </th>
+                <th>
+                    Product Price
+                </th>
+                <th>
+                    Category
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var item in Model.Products)
+                {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td> @item.ProductName</td>
+                        <td>@item.Price</td>
+                        <td>@item.Catelog.CatelogName</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
 </div>
+

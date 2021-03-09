@@ -11,12 +11,14 @@ namespace NopCommerceClone.Data
     {
         public static void Initialize(NopCommereceCloneDbContext context)
         {
-            context.Database.EnsureCreated();
+            context.Database.EnsureCreated(); 
 
             if(context.Products.Any())
             {
                 return;
             }
+
+            #region seeds
             var admins = new Admin[]
             {
                 new Admin
@@ -68,21 +70,25 @@ namespace NopCommerceClone.Data
                     Price=10.00,
                     ProductName="Raspberry Pi",
                     AddedAt=DateTime.Now,
-                    AdminID=1
+                    AdminID=1,
+                    CatelogID=1,
+
                 },
                 new Product
                 {
                     Price=100.00,
                     ProductName="LattePanda",
                     AddedAt=DateTime.Now,
-                    AdminID=2
+                    AdminID=2,
+                    CatelogID=1,
                 },
                 new Product
                 {
                     Price=22.33,
                     ProductName="Xiaomi",
                     AddedAt=DateTime.Now,
-                    AdminID=1
+                    AdminID=1,
+                    CatelogID=1,
                 }
             };
 
@@ -92,7 +98,7 @@ namespace NopCommerceClone.Data
             }
 
             context.SaveChanges();
-
+            #endregion
         }
     }
 }

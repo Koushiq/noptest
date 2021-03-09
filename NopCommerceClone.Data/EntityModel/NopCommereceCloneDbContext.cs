@@ -16,21 +16,27 @@ namespace NopCommerceClone.Data
         : base(options)
         {}
 
-        public NopCommereceCloneDbContext()
-        {
-        }
+        //public NopCommereceCloneDbContext()
+        //{
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Catelog>().ToTable("Catelog");
             modelBuilder.Entity<Admin>().ToTable("Admin");
-            modelBuilder.Entity<Product>().ToTable("Products");
+            modelBuilder.Entity<Product>().ToTable("Product");
 
 
             //fluent api validation!
             modelBuilder.Entity<Admin>()
             .HasIndex(u => u.Username)
             .IsUnique();
+
+            modelBuilder.Entity<Product>()
+                .HasOne(s => s.Catelog)
+                .WithMany(s => s.Products)
+                .HasForeignKey(s => s.CatelogID)
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
 

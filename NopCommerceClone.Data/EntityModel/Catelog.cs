@@ -16,9 +16,9 @@ namespace NopCommerceClone.Web.Models
         public DateTime AddedAt { get; set; }
         [Required]
         public int AdminID { get; set; }
-        public Admin Admin { get; set; }
+        public virtual Admin Admin { get; set; }
 
-        public  ICollection<Product> Products { get; set; }
+        public virtual List<Product> Products { get; set; }
 
     }
 }

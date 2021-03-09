@@ -77,3 +77,4 @@ C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone\bin\Debug\netcorea
 C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone\bin\Debug\netcoreapp3.1\NopCommerceClone.Data.dll
 C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone\bin\Debug\netcoreapp3.1\NopCommerceClone.Data.pdb
+C:\Users\BS564\source\repos\NopCommerceClone\NopCommerceClone\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs

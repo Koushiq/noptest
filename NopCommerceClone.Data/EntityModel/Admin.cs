@@ -11,6 +11,7 @@ namespace NopCommerceClone.Web.Models
 {
     public class Admin
     {
+        #region Properties
         public int ID { get; set; }
         [Required, MaxLength(100), MinLength(4)]
         
@@ -20,7 +21,8 @@ namespace NopCommerceClone.Web.Models
         [Required]
         public DateTime RegisteredAt { get; set; }
 
-        public  ICollection<Catelog> CatelogItems { get; set; }
-        public  ICollection<Product> Products { get; set; }
+        public virtual  List<Catelog> CatelogItems { get; set; }
+        public virtual List<Product> Products { get; set; }
+        #endregion
     }
 }
